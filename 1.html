@@ -25,12 +25,13 @@
     });
     }
       fetch('list').then(function(response){
-        response.text().then(function(text){
-            document.querySelector('#nav').innerHTML = text;
+        console.log(text);
+        var items = text.split(',');
+        console.log(items);
+        document.querySelector('#nav').innerHTML = text;
         })
     });
-    
-
+  
   </script>
 </body>
 </html>

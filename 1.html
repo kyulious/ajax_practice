@@ -27,10 +27,16 @@
       fetch('list').then(function(response){
         console.log(text);
         var items = text.split(',');
+        var i =0;
+        while(i<items.length){
+          var item = items[i];
+          console.log(item);
+          i = i + 1;
+        }
         console.log(items);
         document.querySelector('#nav').innerHTML = text;
-        })
-    });
+        });
+ 
   
   </script>
 </body>

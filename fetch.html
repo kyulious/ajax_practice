@@ -14,7 +14,10 @@
     */
    //Asynchronous
     fetch('html').then(function(response){
-       console.log('respond end');
+       console.log('response.status');
+       if(response.status == '404'){
+           alert('Not Found')
+       }
    });
     ">
 </body>

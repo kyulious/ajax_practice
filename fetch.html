@@ -12,10 +12,10 @@
         })
     })
     */
-   function callbackme(){
+   //Asynchronous
+    fetch('html').then(function(response){
        console.log('respond end');
-   }
-    fetch('html').then(callbackme);
+   });
     ">
 </body>
 </html>
